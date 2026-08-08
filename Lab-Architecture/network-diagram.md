@@ -1,17 +1,12 @@
 # Network Diagram
 
-```
-             Internet
-                 |
-          +--------------+
-          |   Router     |
-          +--------------+
-                 |
-        ----------------------
-        |                    |
-   Kali Linux          Windows 10
-      Attacker            Victim
-               |
-          Ubuntu Linux
-          SOC Analyst
-```
+
+                    Internet
+                        │
+                  NAT Network
+                  "LAB-NET"
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+        Kali         Windows 10     Ubuntu
+       Attacker        Victim      SOC Analyst
